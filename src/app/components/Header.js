@@ -30,7 +30,7 @@ export const Header = () => {
         setHeader(false)
       }
       // search
-      if (window.screenY > 800) {
+      if (window.screenY > 80) {
         setSearchActive(true);
       } else {
         setSearchActive(false);
