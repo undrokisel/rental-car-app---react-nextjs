@@ -69,7 +69,7 @@ export const Header = () => {
             spy={true}
             className='cursor-pointer'
           >
-            <Image src={'/icons/logo.svg'}
+            <Image priority src={'/icons/logo.svg'}
               width={194} height={64} alt=''
             />
           </Link>

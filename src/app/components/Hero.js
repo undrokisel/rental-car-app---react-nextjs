@@ -20,7 +20,7 @@ export const Hero = () => {
               variants={fadeIn('down', 0.2)}
               initial='hidden'
               whileInView={'show'}
-              viewPort={{ once: false, amount: 0.6 }}
+              viewport={{ once: false, amount: 0.6 }}
             >
               Explore the Finest <span className="text-accent">Global</span>{' '}
               Offers
@@ -29,7 +29,7 @@ export const Hero = () => {
               variants={fadeIn('down', 0.4)}
               initial='hidden'
               whileInView={'show'}
-              viewPort={{ once: false, amount: 0.6 }}
+              viewport={{ once: false, amount: 0.6 }}
               className='description max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-10'>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam minima odio ratione, amet non porro eaque illum, obcaecati consectetur doloremque molestias praesentium fugiat dolore eum adipisci ipsum architecto ipsa maxime.
             </motion.p>
@@ -37,7 +37,7 @@ export const Hero = () => {
               variants={fadeIn('down', 0.6)}
               initial='hidden'
               whileInView={'show'}
-              viewPort={{ once: false, amount: 0.8 }}
+              viewport={{ once: false, amount: 0.8 }}
               className="flex gap-x-3 justify-center xl:justify-start">
               <button className='btn-cta'>
                 <Image
@@ -59,7 +59,7 @@ export const Hero = () => {
             variants={fadeIn('up', 0.6)}
             initial='hidden'
             whileInView={'show'}
-            viewPort={{ once: false, amount: 0.6 }}
+            viewport={{ once: false, amount: 0.6 }}
             className="relative w-full h-full max-h-[50vh] md:max-w-[70vw]
                       xl:max-w-[860px] xl:max-h-[542px] xl:absolute
                       xl:-right-[100px] min-[1680px]
@@ -91,7 +91,7 @@ export const Hero = () => {
                 variants={fadeIn('up', 0.2)}
                 initial='hidden'
                 whileInView={'show'}
-                viewPort={{ once: false, amount: 0.2 }}
+                viewport={{ once: false, amount: 0.2 }}
                 className='-mt-12 w-full max-w-[1300px] mx-auto'>
                 <Search />
               </motion.div>
