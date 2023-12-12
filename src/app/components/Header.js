@@ -1,15 +1,18 @@
 "use client"
 
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { useMediaQuery } from 'react-responsive';
 import { Link } from 'react-scroll';
 
 import { BiMenuAltRight, BiX } from 'react-icons/bi'
 import { SearchMobile } from './SearchMobile';
+import { SearchContext } from '../context/search';
 
 
 export const Header = () => {
+  const { searchActive, setSearchActive } = useContext(SearchContext);
+
   const [header, setHeader] = useState(false);
   const [nav, setNav] = useState(false);
 
@@ -18,15 +21,24 @@ export const Header = () => {
   })
 
   useEffect(() => {
-    //header
+
     const handleScroll = () => {
+      //header
       if (window.scrollY > 40) {
         setHeader(true)
       } else {
         setHeader(false)
       }
+      // search
+      if (window.screenY > 800) {
+        setSearchActive(true);
+      } else {
+        setSearchActive(false);
+      }
     }
-    //addEvevntListener
+
+
+    //Event Listener
     window.addEventListener('scroll', handleScroll);
     //removeEventLitener
     return () => {
@@ -118,7 +130,7 @@ export const Header = () => {
           </Link>
           <Link
             className='cursor-pointer'
-            to="testimonials"
+            to="testimonial"
             activeClass='active'
             smooth={desktopMode}
             spy={true}
@@ -126,7 +138,7 @@ export const Header = () => {
           </Link>
           <Link
             className='cursor-pointer'
-            to="contact"
+            to="contacts"
             activeClass='active'
             smooth={desktopMode}
             spy={true}
