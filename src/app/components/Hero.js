@@ -4,6 +4,8 @@ import React, { useContext } from 'react'
 import { Search } from './Search'
 import { SearchContext } from '../context/search'
 import Image from 'next/image'
+import { easeInOut, motion } from 'framer-motion'
+import { fadeIn } from '../../../variants'
 
 export const Hero = () => {
   const { searchActive } = useContext(SearchContext)
@@ -13,14 +15,30 @@ export const Hero = () => {
         {/* text & img wrapper */}
         <div className="flex flex-col xl:flex-row justify-center items-center xl:justify-start h-full">
           <div className="text-center xl:max-w-xl xl:text-left mt-16 xl:mt-0">
-            <div className="h1">
+            <motion.h1
+              className="h1"
+              variants={fadeIn('down', 0.2)}
+              initial='hidden'
+              whileInView={'show'}
+              viewPort={{ once: false, amount: 0.6 }}
+            >
               Explore the Finest <span className="text-accent">Global</span>{' '}
               Offers
-            </div>
-            <p className='description max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-10'>
+            </motion.h1>
+            <motion.p
+              variants={fadeIn('down', 0.4)}
+              initial='hidden'
+              whileInView={'show'}
+              viewPort={{ once: false, amount: 0.6 }}
+              className='description max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-10'>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam minima odio ratione, amet non porro eaque illum, obcaecati consectetur doloremque molestias praesentium fugiat dolore eum adipisci ipsum architecto ipsa maxime.
-            </p>
-            <div className="flex gap-x-3 justify-center xl:justify-start">
+            </motion.p>
+            <motion.div
+              variants={fadeIn('down', 0.6)}
+              initial='hidden'
+              whileInView={'show'}
+              viewPort={{ once: false, amount: 0.8 }}
+              className="flex gap-x-3 justify-center xl:justify-start">
               <button className='btn-cta'>
                 <Image
                   width={132}
@@ -35,9 +53,13 @@ export const Hero = () => {
                   alt=''
                   src={'/icons/buttons/app-store.svg'} />
               </button>
-            </div>
+            </motion.div>
           </div>
-          <div
+          <motion.div
+            variants={fadeIn('up', 0.6)}
+            initial='hidden'
+            whileInView={'show'}
+            viewPort={{ once: false, amount: 0.6 }}
             className="relative w-full h-full max-h-[50vh] md:max-w-[70vw]
                       xl:max-w-[860px] xl:max-h-[542px] xl:absolute
                       xl:-right-[100px] min-[1680px]
@@ -50,17 +72,31 @@ export const Hero = () => {
               style={{ objectFit: 'contain' }}
               priority
             />
-          </div>
+          </motion.div>
         </div>
       </div>
       {
         searchActive
-          ? (<div className='fixed top-[80px] z-10 w-full max-w-[1920px]'>
+          ? (<motion.div
+            initial={{ y: '-100%' }}
+            animate={{ y: 0 }}
+            transition={{ ease: easeInOut }}
+
+            className='fixed top-[80px] z-10 w-full max-w-[1920px]'>
             <Search />
-          </div>)
-          : (<div className='-mt-12 w-full max-w-[1300px] mx-auto'>
-            <Search />
-          </div>)
+          </motion.div>)
+          : (
+            <div className="-mt-12 w-full max-w-[1300px] mx-auto">
+              <motion.div
+                variants={fadeIn('up', 0.2)}
+                initial='hidden'
+                whileInView={'show'}
+                viewPort={{ once: false, amount: 0.2 }}
+                className='-mt-12 w-full max-w-[1300px] mx-auto'>
+                <Search />
+              </motion.div>
+            </div>
+          )
       }
     </section>
   )
