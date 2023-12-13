@@ -22,8 +22,8 @@ export const Hero = () => {
               whileInView={'show'}
               viewport={{ once: false, amount: 0.6 }}
             >
-              Explore the Finest <span className="text-accent">Global</span>{' '}
-              Offers
+              На любой случай <span className="text-accent">любой</span>{' '}
+              автомобиль
             </motion.h1>
             <motion.p
               variants={fadeIn('down', 0.4)}

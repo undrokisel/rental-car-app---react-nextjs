@@ -69,7 +69,7 @@ export const Header = () => {
             spy={true}
             className='cursor-pointer'
           >
-            <Image priority src={'/icons/logo.svg'}
+            <Image priority src={'/icons/logo.png'}
               width={194} height={64} alt=''
             />
           </Link>
@@ -102,7 +102,7 @@ export const Header = () => {
             activeClass='active'
             smooth={desktopMode}
             spy={true}
-          >Home
+          >Главная
           </Link>
           <Link
             className='cursor-pointer'
@@ -110,7 +110,7 @@ export const Header = () => {
             activeClass='active'
             smooth={desktopMode}
             spy={true}
-          >Cars
+          >Машины
           </Link>
           <Link
             className='cursor-pointer'
@@ -118,7 +118,7 @@ export const Header = () => {
             activeClass='active'
             smooth={desktopMode}
             spy={true}
-          >About
+          >О нас
           </Link>
           <Link
             className='cursor-pointer'
@@ -126,7 +126,7 @@ export const Header = () => {
             activeClass='active'
             smooth={desktopMode}
             spy={true}
-          >why us
+          >Наши преимущества
           </Link>
           <Link
             className='cursor-pointer'
@@ -134,7 +134,7 @@ export const Header = () => {
             activeClass='active'
             smooth={desktopMode}
             spy={true}
-          >testimonials
+          >Отзывы
           </Link>
           <Link
             className='cursor-pointer'
@@ -142,7 +142,7 @@ export const Header = () => {
             activeClass='active'
             smooth={desktopMode}
             spy={true}
-          >contact
+          >Контакты
           </Link>
           <Link
             className='xl:hidden bg-pink-300
@@ -152,7 +152,7 @@ export const Header = () => {
             activeClass='active'
             smooth={desktopMode}
             spy={true}
-          >see all cars
+          >Посмотреть все авто
           </Link>
           <SearchMobile />
         </nav>

@@ -21,7 +21,7 @@ export const Why = () => {
           whileInView={'show'}
           viewport={{ once: false, amount: 0.6 }}
           className="h2 text-center">
-          Unmatched excellence and customer satisfaction
+          Непревзойденное качество и сотни довольных клиентов
         </motion.h2>
         <motion.p
           variants={fadeIn('up', 0.4)}
@@ -29,9 +29,8 @@ export const Why = () => {
           whileInView={'show'}
           viewport={{ once: false, amount: 0.6 }}
           className="max-w-[680px] text-center mx-auto mb-6 xl:mb-2">
-          Our dedication to providing exceptional services sets us apart from the competition.
-          From the moment you engage with us,
-          we strive to exceed your expectations in every interaction
+          Наша компания входит в топ 3 сервисов по аренде автомобилей в Перми.
+          Мы стремимся превзойти все ваши ожидания с первой встречи
         </motion.p>
         <motion.div
           variants={fadeIn('up', 0.6)}
@@ -50,7 +49,7 @@ export const Why = () => {
           variants={fadeIn('up', 0.8)}
           initial='hidden'
           whileInView={'show'}
-          viewport={{once: false, amount: 0.4}}  
+          viewport={{ once: false, amount: 0.4 }}
 
           className="flex flex-wrap justify-center
           xl:grid xl:grid-cols-3 gap-4  xl:gap-y-0 xl:gap-x-[30px]"
@@ -61,11 +60,10 @@ export const Why = () => {
                       max-w-[160px] xl:max-w-none p-2 xl:p-0"
           >
             <MdKey className='text-accent text-[38px] mb-4' />
-            <h3 className="h3">Rent simplify and quickly</h3>
+            <h3 className="h3">Аренда авто: с нами это быстро и просто</h3>
             <p className="hidden xl:flex">
-              We prioritize your need and we go above and
-              beyond to ensure your experience with us
-              is nothing short of outstanding
+              Мы уделяем максимальное внимание вашим потребностям и делаем все возможное
+              , чтобы процесс аренды автомобиля был простым и быстрым
             </p>
 
           </div>
@@ -75,11 +73,10 @@ export const Why = () => {
                       max-w-[160px] xl:max-w-none p-2 xl:p-0"
           >
             <MdTrendingUp className='text-accent text-[38px] mb-4' />
-            <h3 className="h3">Modern & well maintained vehicles</h3>
+            <h3 className="h3">Современное и качественное СТО в гарантийных сервисах </h3>
             <p className="hidden xl:flex">
-              We prioritize your need and we go above and
-              beyond to ensure your experience with us
-              is nothing short of outstanding
+              Наши сервисы технического обслуживания еженедельно проверяют техническое состояние атомобилей,
+              вы можете не беспокоиться - автомобили в порядке !
             </p>
 
           </div>
@@ -89,11 +86,9 @@ export const Why = () => {
                       max-w-[160px] xl:max-w-none p-2 xl:p-0"
           >
             <MdHandshake className='text-accent text-[38px] mb-4' />
-            <h3 className="h3">Prompt and flexible services</h3>
+            <h3 className="h3">Оперативная техподдержка</h3>
             <p className="hidden xl:flex">
-              We prioritize your need and we go above and
-              beyond to ensure your experience with us
-              is nothing short of outstanding
+              Наша техническа поддержка на связи 24/7!
             </p>
 
           </div>

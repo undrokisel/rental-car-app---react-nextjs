@@ -69,7 +69,7 @@ export const Cta = () => {
             className="flex-1 flex justify-center order-1
                           md:order-none">
             <Image
-              src={'/images/cta/phone.svg'}
+              src={'/images/cta/phone.png'}
               width={320}
               height={640}
               alt=''

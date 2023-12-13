@@ -29,7 +29,7 @@ export const Footer = () => {
               <Image
                 height={200}
                 width={200}
-                src={'/icons/logo.svg'}
+                src={'/icons/logo.png'}
                 alt=''
               />
             </Link>
@@ -43,7 +43,7 @@ export const Footer = () => {
               </div>
               <div className="flex items-center gap-x-2">
                 <FaEnvelope />
-                <div className="font-medium">office@carland.com</div>
+                <div className="font-medium">office@indexdrive.com</div>
               </div>
             </div>
           </div>

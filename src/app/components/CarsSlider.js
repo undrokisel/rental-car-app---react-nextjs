@@ -12,77 +12,77 @@ import { fadeIn } from '../../../variants'
 
 const cars = [
   {
-    type: 'Hatchback',
+    type: 'Хетчбэк',
     name: 'Ford Focus',
-    price: 29,
+    price: 1700,
     stars: 3.5,
     image: 'images/carSlider/car01.svg',
     info: [
       {
         icon: 'icons/carSlider/gearShift.svg',
-        text: 'Manual',
+        text: 'Ручная',
       },
       {
         icon: 'icons/carSlider/seat.svg',
-        text: '5 seats',
+        text: '5 мест',
       },
       {
         icon: 'icons/carSlider/gas.svg',
-        text: 'Gas',
+        text: 'Пропан',
       },
       {
         icon: 'icons/carSlider/wheel.svg',
-        text: 'Front',
+        text: `Передний`,
       },
     ]
   },
   {
-    type: 'SUV',
+    type: 'Седан',
     name: 'Honda CR-V',
-    price: 35,
+    price: 3500,
     stars: 4.7,
     image: 'images/carSlider/car03.svg',
     info: [
       {
         icon: 'icons/carSlider/gearShift.svg',
-        text: 'Automatic',
+        text: 'Автомат',
       },
       {
         icon: 'icons/carSlider/seat.svg',
-        text: '5 seats',
+        text: '5 мест',
       },
       {
         icon: 'icons/carSlider/gas.svg',
-        text: 'Gas',
+        text: 'Пропан',
       },
       {
         icon: 'icons/carSlider/wheel.svg',
-        text: 'Front',
+        text: 'Передний',
       },
     ]
   },
   {
-    type: 'Sedan',
+    type: 'Седан',
     name: 'Toyota Corolla',
-    price: 25,
+    price: 2500,
     stars: 5,
     image: 'images/carSlider/car02.svg',
     info: [
       {
         icon: 'icons/carSlider/gearShift.svg',
-        text: 'Manual',
+        text: 'Ручная',
       },
       {
         icon: 'icons/carSlider/seat.svg',
-        text: '5 seats',
+        text: '5 мест',
       },
       {
         icon: 'icons/carSlider/gas.svg',
-        text: 'Gas',
+        text: 'Пропан',
       },
       {
         icon: 'icons/carSlider/wheel.svg',
-        text: 'Front',
+        text: 'Передний',
       },
     ]
   },
@@ -119,7 +119,7 @@ export const CarsSlider = () => {
                         {car.name}
                       </h3>
                       <div className='mb-10 text-accent font-semibold uppercase'>
-                        {car.price}/day
+                        {car.price} руб./день
                       </div>
                     </div>
                     <div className="flex text-accent gap-x-2 h-max">

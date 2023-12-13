@@ -52,7 +52,7 @@ export const About = () => {
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.6 }}
                 className="h2">
-                Car services simplified.
+                Арендовать автомобиль теперь очень просто
               </motion.h2>
               <motion.p
                 variants={fadeIn('up', 0.4)}
@@ -60,8 +60,11 @@ export const About = () => {
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.4 }}
                 className="mb-[42px] max-w-md">
-                Rent, choose and repair with ease. our convinient locations, diverse car types,
-                and reliable repair points ensure a seamless car experience.
+                Выбирайте авто для аренды быстро и легко. 
+                У нас пять филиалов в городе Перми, которые предоставляют
+                в вашему выбору разнообразные марки и модели авто. 
+                4 надеждых центра обслуживания и ремонта 
+                гарантируют работоспособность автомобиля на время аренды.
               </motion.p>
               <motion.div
                 variants={fadeIn('up', 0.6)}
@@ -79,7 +82,7 @@ export const About = () => {
                     } +
                   </div>
                   <div className="uppercase text-[13px] font-semibold text-secondary">
-                    car <br /> types
+                    Моделей <br /> авто
                   </div>
                 </div>
 
@@ -88,12 +91,12 @@ export const About = () => {
                   <div className="text-3xl font-black mb-2">
                     {
                       inView
-                        ? (<CountUp start={0} end={138} duration={3} delay={1} />)
+                        ? (<CountUp start={0} end={5} duration={3} delay={1} />)
                         : null
                     } +
                   </div>
                   <div className="uppercase text-[13px] font-semibold text-secondary">
-                    rental <br /> outlets
+                    Пунктов <br /> проката
                   </div>
                 </div>
 
@@ -102,12 +105,12 @@ export const About = () => {
                   <div className="text-3xl font-black mb-2">
                     {
                       inView
-                        ? (<CountUp start={0} end={36} duration={3} delay={1} />)
+                        ? (<CountUp start={0} end={4} duration={3} delay={1} />)
                         : null
                     } +
                   </div>
                   <div className="uppercase text-[13px] font-semibold text-secondary">
-                    repair <br /> points
+                    Центров <br /> СТО
                   </div>
                 </div>
 
