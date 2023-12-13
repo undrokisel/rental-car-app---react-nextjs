@@ -17,7 +17,7 @@ export const Why = () => {
       <div className="container mx-auto">
         <motion.h2
           variants={fadeIn('up', 0.2)}
-          initial='hidden'
+          // initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.6 }}
           className="h2 text-center">
@@ -25,7 +25,7 @@ export const Why = () => {
         </motion.h2>
         <motion.p
           variants={fadeIn('up', 0.4)}
-          initial='hidden'
+          // initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.6 }}
           className="max-w-[680px] text-center mx-auto mb-6 xl:mb-2">
@@ -34,7 +34,7 @@ export const Why = () => {
         </motion.p>
         <motion.div
           variants={fadeIn('up', 0.6)}
-          initial='hidden'
+          // initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.6 }}
           className="hidden md:flex justify-center mb-6 xl:mb-2">
@@ -47,7 +47,7 @@ export const Why = () => {
         </motion.div>
         <motion.div
           variants={fadeIn('up', 0.8)}
-          initial='hidden'
+          // initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.4 }}
 

@@ -12,7 +12,7 @@ export const Brands = () => {
     >
       <motion.div
         variants={fadeIn('up', 0.4)}
-        initial='hidden'
+        // initial='hidden'
         whileInView={'show'}
         viewport={{ once: false, amount: 0.6 }}
         className="container mx-auto">

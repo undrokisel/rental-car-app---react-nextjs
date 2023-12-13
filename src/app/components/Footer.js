@@ -19,7 +19,7 @@ export const Footer = () => {
         {/* grid */}
         <motion.div
           variants={fadeIn('up', 0.2)}
-          initial='hidden'
+          // initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.6 }}
           className="flex flex-col lg:flex-row lg:justify-between gap-x-5 gap-y-14">

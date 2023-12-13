@@ -31,7 +31,7 @@ export const About = () => {
         <div className="flex flex-col xl:flex-row xl:justify-between">
           <motion.div
             variants={fadeIn('up', 0.2)}
-            initial='hidden'
+            // initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.6 }}
             className="flex-1 mb-8 xl:mb-0">
@@ -48,7 +48,7 @@ export const About = () => {
             <div className="xl:max-w-[517px]">
               <motion.h2
                 variants={fadeIn('up', 0.2)}
-                initial='hidden'
+                // initial='hidden'
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.6 }}
                 className="h2">
@@ -56,7 +56,7 @@ export const About = () => {
               </motion.h2>
               <motion.p
                 variants={fadeIn('up', 0.4)}
-                initial='hidden'
+                // initial='hidden'
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.4 }}
                 className="mb-[42px] max-w-md">
@@ -68,7 +68,7 @@ export const About = () => {
               </motion.p>
               <motion.div
                 variants={fadeIn('up', 0.6)}
-                initial='hidden'
+                // initial='hidden'
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.6 }}
                 className="flex items-center gap-x-8 mb-12">
@@ -118,7 +118,7 @@ export const About = () => {
               </motion.div>
               <motion.button
                 variants={fadeIn('up', 0.6)}
-                initial='hidden'
+                // initial='hidden'
                 whileInView={'show'}
                 viewport={{ once: false, amount: 1 }}
                 className='hidden xl:block bg-accent hover:bg-accent-hover

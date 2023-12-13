@@ -93,7 +93,7 @@ export const CarsSlider = () => {
   return (
     <motion.div
       variants={fadeIn('up', 0.2)}
-      initial='hidden'
+      // initial='hidden'
       whileInView={'show'}
       viewport={{ once: false, amount: 0.2 }}
       className='container mx-auto'>

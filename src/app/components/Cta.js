@@ -19,7 +19,7 @@ export const Cta = () => {
             <div className="max-w-[520px] mx-auto order-2 xl:order-none">
               <motion.h2
                 variants={fadeIn('right', 0.2)}
-                initial='hidden'
+                // initial='hidden'
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.6 }}
                 className="h2">
@@ -27,7 +27,7 @@ export const Cta = () => {
               </motion.h2>
               <motion.p
                 variants={fadeIn('right', 0.4)}
-                initial='hidden'
+                // initial='hidden'
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.6 }}
                 className='mb-10' >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam suscipit molestiae tempore blanditiis, voluptates placeat accusantium dignissimos id expedita atque magnam sed architecto quod fuga optio, amet adipisci perferendis consectetur.
@@ -35,7 +35,7 @@ export const Cta = () => {
               {/* buttons */}
               <motion.div
                 variants={fadeIn('right', 0.6)}
-                initial='hidden'
+                // initial='hidden'
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.6 }}
                 className="flex gap-x-3 justify-center md:justify-start mb-4">
@@ -63,7 +63,7 @@ export const Cta = () => {
           {/* image */}
           <motion.div
             variants={fadeIn('up', 0.8)}
-            initial='hidden'
+            // initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.2 }}
             className="flex-1 flex justify-center order-1

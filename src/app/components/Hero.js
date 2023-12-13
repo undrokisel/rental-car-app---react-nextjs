@@ -18,7 +18,7 @@ export const Hero = () => {
             <motion.h1
               className="h1"
               variants={fadeIn('down', 0.2)}
-              initial='hidden'
+              // initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.6 }}
             >
@@ -27,7 +27,7 @@ export const Hero = () => {
             </motion.h1>
             <motion.p
               variants={fadeIn('down', 0.4)}
-              initial='hidden'
+              // initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.6 }}
               className='description max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-10'>
@@ -35,7 +35,7 @@ export const Hero = () => {
             </motion.p>
             <motion.div
               variants={fadeIn('down', 0.6)}
-              initial='hidden'
+              // initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.8 }}
               className="flex gap-x-3 justify-center xl:justify-start">
@@ -57,7 +57,7 @@ export const Hero = () => {
           </div>
           <motion.div
             variants={fadeIn('up', 0.6)}
-            initial='hidden'
+            // initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.6 }}
             className="relative w-full h-full max-h-[50vh] md:max-w-[70vw]
@@ -89,7 +89,7 @@ export const Hero = () => {
             <div className="-mt-12 w-full max-w-[1300px] mx-auto">
               <motion.div
                 variants={fadeIn('up', 0.2)}
-                initial='hidden'
+                // initial='hidden'
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.2 }}
                 className='-mt-12 w-full max-w-[1300px] mx-auto'>
