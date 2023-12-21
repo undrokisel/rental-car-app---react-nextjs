@@ -10,11 +10,12 @@ import { fadeIn } from '../../../variants'
 export const Hero = () => {
   const { searchActive } = useContext(SearchContext)
   return (
-    <section className='h-screen xl:h-[90vh] bg-[#b2b7c2]/10' id='home'>
+    <section className='h-screen xl:h-[90vh] mt-8' id='home'>
       <div className="container mx-auto h-full xl:pt-10">
         {/* text & img wrapper */}
         <div className="flex flex-col xl:flex-row justify-center items-center xl:justify-start h-full">
           <div className="text-center xl:max-w-xl xl:text-left mt-16 xl:mt-0">
+            {/* <motion.h1 */}
             <motion.h1
               className="h1"
               variants={fadeIn('down', 0.2)}
@@ -25,6 +26,7 @@ export const Hero = () => {
               На любой случай <span className="text-accent">любой</span>{' '}
               автомобиль
             </motion.h1>
+            {/* <motion.p */}
             <motion.p
               variants={fadeIn('down', 0.4)}
               initial='hidden'
@@ -33,6 +35,7 @@ export const Hero = () => {
               className='description max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-10'>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam minima odio ratione, amet non porro eaque illum, obcaecati consectetur doloremque molestias praesentium fugiat dolore eum adipisci ipsum architecto ipsa maxime.
             </motion.p>
+            {/* <motion.div */}
             <motion.div
               variants={fadeIn('down', 0.6)}
               initial='hidden'
@@ -55,6 +58,7 @@ export const Hero = () => {
               </button>
             </motion.div>
           </div>
+          {/* <motion.div */}
           <motion.div
             variants={fadeIn('up', 0.6)}
             initial='hidden'
@@ -77,16 +81,18 @@ export const Hero = () => {
       </div>
       {
         searchActive
-          ? (<motion.div
+          // ? (<motion.div
+          ? (<div
             initial={{ y: '-100%' }}
             animate={{ y: 0 }}
             transition={{ ease: easeInOut }}
 
             className='fixed top-[80px] z-10 w-full max-w-[1920px]'>
             <Search />
-          </motion.div>)
+          </div>)
           : (
             <div className="-mt-12 w-full max-w-[1300px] mx-auto">
+              {/* <motion.div */}
               <motion.div
                 variants={fadeIn('up', 0.2)}
                 initial='hidden'

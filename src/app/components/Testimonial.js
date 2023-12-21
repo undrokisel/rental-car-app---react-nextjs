@@ -2,7 +2,6 @@
 
 import React from 'react'
 
-import { motion } from 'framer-motion'
 import { TestimonialSlider } from './TestimonialSlider'
 
 export const Testimonial = () => {

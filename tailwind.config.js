@@ -5,6 +5,7 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  mode: 'jit',
   theme: {
     container: {
       padding: {
@@ -12,8 +13,11 @@ module.exports = {
       },
     },
     screens: {
+      xxsm: '0px',
+      xsm: '350px',
       sm: '640px',
       md: '768px',
+      pl: '720px',
       lg: '1024px',
       xl: '1300px',
     },
@@ -25,7 +29,7 @@ module.exports = {
           DEFAULT: '#ED1D24',
           hover: '#dd242a',
         },
-        body: '#dedede',
+        body: '#fff',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

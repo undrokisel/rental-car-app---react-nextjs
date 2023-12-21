@@ -17,6 +17,7 @@ export const Cta = () => {
 
           <div className="flex-1 xl:ml-24 text-center md:text-left mb-12 md:mb-0">
             <div className="max-w-[520px] mx-auto order-2 xl:order-none">
+              {/* <motion.h2 */}
               <motion.h2
                 variants={fadeIn('right', 0.2)}
                 initial='hidden'
@@ -25,6 +26,7 @@ export const Cta = () => {
                 className="h2">
                 Установите наше приложение и пользуйтесь новым авто в несколько кликов
               </motion.h2>
+              {/* <motion.p */}
               <motion.p
                 variants={fadeIn('right', 0.4)}
                 initial='hidden'
@@ -33,6 +35,7 @@ export const Cta = () => {
                 className='mb-10' >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam suscipit molestiae tempore blanditiis, voluptates placeat accusantium dignissimos id expedita atque magnam sed architecto quod fuga optio, amet adipisci perferendis consectetur.
               </motion.p>
               {/* buttons */}
+              {/* <motion.div */}
               <motion.div
                 variants={fadeIn('right', 0.6)}
                 initial='hidden'
@@ -61,6 +64,7 @@ export const Cta = () => {
           </div>
 
           {/* image */}
+          {/* <motion.div */}
           <motion.div
             variants={fadeIn('up', 0.8)}
             initial='hidden'

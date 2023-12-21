@@ -29,12 +29,15 @@ export const About = () => {
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:justify-between">
+
+
+          {/* картинка */}
           <motion.div
             variants={fadeIn('up', 0.2)}
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.6 }}
-            className="flex-1 mb-8 xl:mb-0">
+            className="flex-1 mb-8 xl:mb-0 self-">
             <Image
               priority
               className='rounded-[20px]'
@@ -46,6 +49,7 @@ export const About = () => {
           </motion.div>
           <div className='flex-1 flex items-center xl:justify-center'>
             <div className="xl:max-w-[517px]">
+
               <motion.h2
                 variants={fadeIn('up', 0.2)}
                 initial='hidden'
@@ -54,18 +58,22 @@ export const About = () => {
                 className="h2">
                 Арендовать автомобиль теперь очень просто
               </motion.h2>
+
+              {/* <motion.p */}
               <motion.p
                 variants={fadeIn('up', 0.4)}
                 initial='hidden'
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.4 }}
                 className="mb-[42px] max-w-md">
-                Выбирайте авто для аренды быстро и легко. 
+                Выбирайте авто для аренды быстро и легко.
                 У нас пять филиалов в городе Перми, которые предоставляют
-                в вашему выбору разнообразные марки и модели авто. 
-                4 надеждых центра обслуживания и ремонта 
+                в вашему выбору разнообразные марки и модели авто.
+                4 надеждых центра обслуживания и ремонта
                 гарантируют работоспособность автомобиля на время аренды.
               </motion.p>
+
+              {/* <motion.div */}
               <motion.div
                 variants={fadeIn('up', 0.6)}
                 initial='hidden'
@@ -114,8 +122,9 @@ export const About = () => {
                   </div>
                 </div>
 
-
               </motion.div>
+
+              {/* <motion.button */}
               <motion.button
                 variants={fadeIn('up', 0.6)}
                 initial='hidden'
@@ -124,7 +133,9 @@ export const About = () => {
                 className='hidden xl:block bg-accent hover:bg-accent-hover
                 rounded-[10px] w-full h-16 uppercase font-medium text-white tracking-[2px]
                 text-[13px] max-w-[184px]'
-              >See all cars</motion.button>
+              >
+                See all cars
+              </motion.button>
             </div>
           </div>
         </div>
